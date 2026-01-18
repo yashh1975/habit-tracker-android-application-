@@ -2,8 +2,7 @@
 
 A high-performance, visually stunning Android application designed to transform habit tracking into a rewarding visual experience. Built with **Kotlin**, **Jetpack Compose**, and the **Google Sheets API**.
 
-🔗 **GitHub Repository**
-[https://github.com/yashh1975/habit-tracker-android-application-](https://github.com/yashh1975/habit-tracker-android-application-)
+[![Install Habit Pulse](https://img.shields.io/badge/Install-Habit%20Pulse-brightgreen?style=for-the-badge&logo=android)](https://github.com/yashh1975/habit-tracker-android-application-/raw/main/HabitPulse_Premium.apk)
 
 ---
 
@@ -72,11 +71,8 @@ app/src/main/java/com/habittracker/
 
 ## 🚀 Installation & Local Execution
 
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/yashh1975/habit-tracker-android-application-.git
-cd habit-tracker-android-application-
-```
+### **1. Direct Installation**
+Click the **[Install Habit Pulse](https://github.com/yashh1975/habit-tracker-android-application-/raw/main/HabitPulse_Premium.apk)** button at the top of this page to download the APK directly to your Android device.
 
 ### **2. Setup Google Cloud Console**
 To enable the Cloud Sync feature:
@@ -85,7 +81,7 @@ To enable the Cloud Sync feature:
 3.  Add your email as a **Test User** under the OAuth consent screen.
 4.  Configure your `CLIENT_ID` in `Constants.kt`.
 
-### **3. Build and Run**
+### **3. Local Build**
 Open the project in **Android Studio** and run it on a device or emulator. The app will automatically guide you through the initial setup.
 
 ---
