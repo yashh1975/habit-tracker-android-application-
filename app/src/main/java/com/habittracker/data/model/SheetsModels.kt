@@ -1,0 +1,12 @@
+package com.habittracker.data.model
+data class ValueRange(val range: String, val majorDimension: String = "ROWS", val values: List<List<Any>>? = null)
+data class Spreadsheet(val spreadsheetId: String, val properties: SpreadsheetProperties, val sheets: List<Sheet>)
+data class SpreadsheetProperties(val title: String)
+data class Sheet(val properties: SheetProperties)
+data class SheetProperties(val sheetId: Int? = null, val title: String, val index: Int? = null, val gridProperties: GridProperties? = null)
+data class GridProperties(val rowCount: Int? = null, val columnCount: Int? = null)
+data class BatchUpdateSpreadsheetRequest(val requests: List<Request>)
+data class Request(val addSheet: AddSheetRequest? = null, val deleteDimension: DeleteDimensionRequest? = null)
+data class AddSheetRequest(val properties: SheetProperties)
+data class DeleteDimensionRequest(val range: DimensionRange)
+data class DimensionRange(val sheetId: Int, val dimension: String = "ROWS", val startIndex: Int, val endIndex: Int)

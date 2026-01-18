@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HabitTracker</string>
+    
+    <!-- Home Screen -->
+    <string name="home_title">Habit Tracker</string>
+    <string name="progress_format">%d%% Complete</string>
+    <string name="btn_next_month">Next Month</string>
+    <string name="btn_reset_month">Reset Month</string>
+    <string name="btn_view_habits">View Habits</string>
+    
+    <!-- Habit Tracker Screen -->
+    <string name="habits_title">Track Your Habits</string>
+    <string name="no_habits_message">No habits for this month</string>
+    
+    <!-- Common -->
+    <string name="loading">Loading...</string>
+    <string name="error_generic">Something went wrong</string>
+    
+    <!-- Month names -->
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+</resources>
