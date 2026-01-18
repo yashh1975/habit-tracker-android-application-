@@ -1,6 +1,12 @@
+---
+
 <p align="center">
   <img src="assets/app_icon.jpg" width="120">
 </p>
+<p align="center"> 
+    <b> Habit Tracker </b> </p>
+    
+---
 
 # 📈 Habit Pulse: Premium Habit Tracker
 
@@ -124,4 +130,5 @@ This project is developed for **educational and productivity purposes**. All per
 ## 👤 Author
 
 **Yash**
-*Consistency is the pulse of achievement.* 📈🔥
+
+---
