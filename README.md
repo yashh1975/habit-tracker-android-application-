@@ -48,6 +48,9 @@ Open the app and click **Login**. Sign in with your preferred Google account. Th
 ### **Step 4: Build Your Habit Stack**
 Click the **+** button to add your first habit. Choose from our custom icon library (Fitness, Reading, Zen, etc.) to give your goals a unique pulse!
 
+### **Step 5: Troubleshooting (Access Denied)**
+If you encounter an **"Access Denied"** error during login, it means your email needs to be whitelisted for this private build. Please contact the author directly to get your email added as a test user.
+
 ---
 
 ## 📄 Problem Statement
