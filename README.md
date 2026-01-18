@@ -27,14 +27,32 @@ Consistency is the cornerstone of progress, yet most habit trackers feel like ch
 
 ---
 
-## 🛠️ Technical Architecture
+## 🏗️ Design Architecture
 
-### **Data Orchestration**
-The app utilizes a sophisticated synchronization engine:
-- **UI Layer**: 100% Jetpack Compose with Material 3.
-- **State Management**: StateFlow-driven MVVM architecture.
-- **Networking**: Retrofit & OkHttp for optimized REST API calls to Google Sheets v4.
-- **Concurrency**: Kotlin Coroutines with `Mutex` locks for thread-safe cloud synchronization.
+The application follows the **MVVM (Model-View-ViewModel)** architectural pattern, ensuring a clean separation of concerns and a highly reactive user interface.
+
+- **View (UI Layer)**: Built entirely with **Jetpack Compose**, utilizing a single-activity architecture with a professional `NavHost` for fluid transitions.
+- **ViewModel**: Manages the UI state using **StateFlow**, reacting to user interactions and bridge communication with the repository.
+- **Model (Data Layer)**: Handles data orchestration between the local memory store and the **Google Sheets REST API**. It uses **Kotlin Coroutines** and `Mutex` locks to ensure thread-safe, non-blocking synchronization.
+
+---
+
+## 📂 Project Structure
+
+```bash
+app/src/main/java/com/habittracker/
+├── data/
+│   ├── model/          # Habit and Month data entities
+│   ├── remote/         # Retrofit API interfaces (Google Sheets v4)
+│   └── repository/     # Logic for Cloud & Local data orchestration
+├── ui/
+│   ├── components/     # Reusable UI widgets (Heatmap, Habit Items)
+│   ├── screens/        # Main screen composables (Home, Stats, Tracker)
+│   └── theme/          # Custom "Obsidian & Indigo" Design System
+├── util/               # Session management and constants
+├── viewmodel/          # State management logic
+└── MainActivity.kt     # App entry point and Navigation setup
+```
 
 ---
 
@@ -49,8 +67,6 @@ The app utilizes a sophisticated synchronization engine:
 *   **Network Stack**: Retrofit 2 + Gson
 *   **Authentication**: Google Identity Services (OAuth 2.0)
 *   **Async**: Kotlin Coroutines & Flow
-*   **Dependency Injection**: Simple Factory Pattern
-*   **Background Tasks**: WorkManager
 
 ---
 
@@ -66,11 +82,11 @@ cd habit-tracker-android-application-
 To enable the Cloud Sync feature:
 1.  Create a project in [Google Cloud Console](https://console.cloud.google.com/).
 2.  Enable the **Google Sheets API**.
-3.  Add your email (and friends' emails) as **Test Users** under the OAuth consent screen.
+3.  Add your email as a **Test User** under the OAuth consent screen.
 4.  Configure your `CLIENT_ID` in `Constants.kt`.
 
 ### **3. Build and Run**
-Open the project in **Android Studio (Hedgehog or later)** and run the `:app:assembleDebug` task to generate your personalized APK.
+Open the project in **Android Studio** and run it on a device or emulator. The app will automatically guide you through the initial setup.
 
 ---
 
@@ -82,15 +98,6 @@ Open the project in **Android Studio (Hedgehog or later)** and run the `:app:ass
 | **Sync Speed** | < 500ms (Optimistic UI) |
 | **Build Warnings** | 0 (Clean Repository Code) |
 | **UI Responsiveness** | 60 FPS (Spring-based Animations) |
-
----
-
-## 🔮 Future Enhancements
-
-*   **Multilingual Support**: Expanding the interface for global users.
-*   **Desktop Widget**: High-vibrancy heatmap directly on the Android home screen.
-*   **Insights Engine**: Deep-learning predictive analysis for habit success rates.
-*   **Social Pulse**: Shared "Team Heatmaps" for group habit tracking.
 
 ---
 
