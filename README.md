@@ -49,7 +49,7 @@ Open the app and click **Login**. Sign in with your preferred Google account. Th
 Click the **+** button to add your first habit. Choose from our custom icon library (Fitness, Reading, Zen, etc.) to give your goals a unique pulse!
 
 ### **Step 5: Troubleshooting (Access Denied)**
-If you encounter an **"Access Denied"** error during login, it means your email needs to be whitelisted for this private build. Please contact the author directly to get your email added as a test user.
+If you encounter an **"Access Denied"** error during login, it means your email needs to be whitelisted for this private build. Please contact the author directly at **[yashwanthkumarr2005@gmail.com](mailto:yashwanthkumarr2005@gmail.com)** to get your email added as a test user.
 
 ---
 
