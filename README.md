@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/app_icon.jpg" width="120">
+</p>
+
 # 📈 Habit Pulse: Premium Habit Tracker
 
 A high-performance, visually stunning Android application designed to transform habit tracking into a rewarding visual experience. Built with **Kotlin**, **Jetpack Compose**, and the **Google Sheets API**.
@@ -6,7 +10,7 @@ A high-performance, visually stunning Android application designed to transform 
 
 ---
 
-## � App Experience
+## 📱 App Experience
 
 ### **User Interface Gallery**
 
@@ -40,7 +44,7 @@ Click the **+** button to add your first habit. Choose from our custom icon libr
 
 ---
 
-## �📄 Problem Statement
+## 📄 Problem Statement
 
 Consistency is the cornerstone of progress, yet most habit trackers feel like chores. They lack immediate visual feedback and often lock your data in proprietary silos. 
 
@@ -52,6 +56,7 @@ Consistency is the cornerstone of progress, yet most habit trackers feel like ch
 
 *   📊 **GitHub-Style Vibrancy Heatmap**: A 30-day "Consistency Index" that visually represents your progress through color intensity.
 *   🎨 **Custom Icon Library**: Choose from 15+ curated icons (Fitness, Zen, Code, Brain, etc.) to give every habit its own identity.
+*   🌙 **Obsidian Dark Theme**: A premium, high-contrast dark mode tailored for late-night productivity and aesthetic excellence.
 *   ☁️ **Google Sheets Backend**: Zero-database architecture—your Google Sheet *is* your database. Secure, private, and accessible anywhere.
 *   💎 **Premium UI/UX**: Overhauled with Glassmorphic surfaces, spring-based micro-animations, and a sleek Obsidian & Indigo design system.
 *   🗑️ **Advanced Deletion Flow**: Dual-path logic allowing you to either "Hide For Today" or "Permanently Delete" habits.
